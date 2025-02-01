@@ -89,7 +89,9 @@ output/qlora_spectrum_finetuned.pth
 
 
 ## 🛠 Customization & Extensions
-✅ Switch Model Architectures – Modify finetune.py to use GPT, LLaMA, T5, etc. ✅ Extend to Multi-GPU – Modify spectrum_trainer.py to include distributed training. ✅ Hyperparameter Tuning – Adjust LoRA rank, SNR threshold, learning rates for better adaptation.
+✅ Switch Model Architectures – Modify finetune.py to use GPT, LLaMA, T5, etc.
+✅ Extend to Multi-GPU – Modify spectrum_trainer.py to include distributed training.
+✅ Hyperparameter Tuning – Adjust LoRA rank, SNR threshold, learning rates for better adaptation.
 
 
 
