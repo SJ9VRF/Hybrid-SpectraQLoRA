@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ```
 
 
-⚡ How to Use
+## ⚡ How to Use
 1️⃣ Fine-Tune a Model
 Run the finetune.py script to train a QLoRA + Spectrum model:
 ```bash
@@ -61,7 +61,7 @@ Modify config.yaml to change:
 * Dataset selection
 * LoRA & optimizer settings
 
-🔬 Methodology
+### 🔬 Methodology
 1️⃣ Signal-to-Noise Ratio (SNR) Analysis
 * Identifies layers with high informativeness.
 * Freezes low-SNR layers to save memory.
@@ -72,7 +72,7 @@ Modify config.yaml to change:
 * Lower VRAM usage → Works on consumer GPUs.
 * Faster training → Only updates essential layers.
 
-📊 Evaluation
+### 📊 Evaluation
 To evaluate the fine-tuned model:
 ```bash
 python src/evaluate.py
@@ -80,7 +80,7 @@ python src/evaluate.py
 
 This script calculates accuracy & loss metrics on a test dataset.
 
-💾 Saving & Inference
+### 💾 Saving & Inference
 After training, the fine-tuned model is saved as:
 
 ``` bash
@@ -88,7 +88,7 @@ output/qlora_spectrum_finetuned.pth
 ```
 
 
-🛠 Customization & Extensions
+## 🛠 Customization & Extensions
 ✅ Switch Model Architectures – Modify finetune.py to use GPT, LLaMA, T5, etc. ✅ Extend to Multi-GPU – Modify spectrum_trainer.py to include distributed training. ✅ Hyperparameter Tuning – Adjust LoRA rank, SNR threshold, learning rates for better adaptation.
 
 
